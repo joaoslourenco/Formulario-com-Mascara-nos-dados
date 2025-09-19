@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="principal">
+
+
+    <div id="titulo">
+        <a id="formulariodedados" href="">FORMULÁRIO DE DADOS</a>
+    </div>
+
+    <form action="" id="formulario">
+        <div>NOME:</div>
+        <div><input type="text"></div>
+        <div>ENDEREÇO:</div>
+        <div><input type="text"></div>
+        <div>CEP:</div>
+        <div><input type="text" id="cep" oninput=mascara_cep() placeholder="00.000-000" maxlength="10"></div>
+        <div>CPF:</div>
+        <div><input type="text" id="cpf" oninput=mascara_cpf() placeholder="000.000.000-00" maxlength="14"></div>
+        <div>TELEFONE:</div>
+        <div><input type="text" id="telefone" oninput=mascara_telefone() placeholder="(00) 9 0000-0000" maxlength="16"></div>
+        <div>CNPJ:</div>
+        <div><input type="text" id="cnpj" oninput=mascara_cnpj() placeholder="00.000.000/0001-00" maxlength="18"></div>
+        <div>CÓDIGO:</div>
+        <div><input type="text" id="codigo" oninput=mascara_codigo() placeholder="00_00//000-000.9.000" maxlength="20"></div>
+        <div id="divenviar"><input type="submit" id="enviar" onclick=alertar()></div>
+    </form>
+
+
+    </div>
+</body>
+</html>
